@@ -7,7 +7,9 @@
 
 @endif
 
-
+<hr>
+<h1><a href="/ex" style="color: red">export</a></h1>
+<hr>
 <form action="/im" method="post" enctype="multipart/form-data">
     @csrf
     <label for="myfile">Select a file:</label>
