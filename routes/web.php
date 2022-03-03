@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/ex',[StudentController::class,'index']);
+Route::get('/ex',[StudentController::class,'export']);
+Route::get('/im',[StudentController::class,'import']);
+Route::post('/im',[StudentController::class,'Store']);
